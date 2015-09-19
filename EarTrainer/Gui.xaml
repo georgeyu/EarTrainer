@@ -3,15 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="ET" Height="180" Width="228">
     <Grid>
-        <Button Content="Note" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Interval" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="75"/>
-        <ComboBox HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox HorizontalAlignment="Left" Margin="90,37,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox HorizontalAlignment="Left" Margin="90,64,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Repeat" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Show" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Play" HorizontalAlignment="Left" Margin="90,91,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBox Margin="10,116,0,0" TextWrapping="Wrap" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200"/>
+        <Button x:Name="NoteButton" Content="Note" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top" Width="75" Click="NoteButton_Click"/>
+        <Button x:Name="IntervalButton" Content="Interval" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="75" Click="IntervalButton_Click"/>
+        <ComboBox x:Name="NoteCombo" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="IntervalCombo" HorizontalAlignment="Left" Margin="90,37,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="Direction" HorizontalAlignment="Left" Margin="90,64,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Repeat" Content="Repeat" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="75" Click="Repeat_Click"/>
+        <Button x:Name="Show" Content="Show" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Width="75" Click="Show_Click"/>
+        <Button x:Name="Play" Content="Play" HorizontalAlignment="Left" Margin="90,91,0,0" VerticalAlignment="Top" Width="75" Click="Play_Click"/>
+        <TextBox x:Name="Result" Margin="10,116,0,0" TextWrapping="Wrap" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200"/>
 
     </Grid>
 </Window>
